@@ -23,7 +23,8 @@ public class Ana_FernandezED {
         System.out.println("¿Que opcion quieres realizar?");
         System.out.println("1- Cambiar de horas a segundos");
         System.out.println("2- Cambiar de kilometros a metros");
-        System.out.println("3 -Salir");
+        System.out.println("3- Dividir kilometros entre 3.6");
+        System.out.println("4 -Salir");
         int opcion=teclado.nextInt();
         do{
         switch (opcion){
@@ -37,9 +38,14 @@ public class Ana_FernandezED {
                     numero=teclado.nextInt();
                     numero=numero*1000;
                     break;
+                case 3:
+                    System.out.println("Introduce un numero");
+                    numero=teclado.nextInt();
+                    numero=(int)(numero/3.6);
+                    break;
                 default:
                     System.out.println("Numero incorrecto");
     }
         }
-    while(numero !=3);
+    while(numero !=4);
 }
